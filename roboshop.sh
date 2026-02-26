@@ -26,6 +26,6 @@ do
             --output text)
     fi
 
-    echo "Instance: instance"
+    # echo "Instance: instance"
     echo "IP Address:" $IP
 done
