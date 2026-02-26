@@ -25,7 +25,7 @@ else
         --query 'Reservations[0].Instances[0].PrivateIpAddress' \
         --output text)
 fi
-
-    # echo "Instance: instance"
+    
     echo "IP Address:" $IP
+    
 done
