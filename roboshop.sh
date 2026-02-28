@@ -2,9 +2,9 @@
 
 SG_ID="sg-048193ac291fc884d"
 AMI_ID="ami-0220d79f3f480ecf5"
-INSTANCE_TYPE="t3.micro"
+INSTANCE_TYPE="t2.micro"
 ZONE_ID="Z0203342ANSR45M2EYDS"
-DOMAIN_NAME="vtk88s.online "
+DOMAIN_NAME="vtk88s.online"
 
 
 for instance in $@
@@ -28,7 +28,7 @@ do
             --query 'Reservations[0].Instances[0].PrivateIpAddress' \
             --output text
             )
-            RECORD_NAME="$Instance.$DOMAIN_NAME" #mongodb.vtkcld.site
+            RECORD_NAME="$Instance.$DOMAIN_NAME" #mongodb.vtk88s.online
     fi
 
     echo "IP Address:" $IP
