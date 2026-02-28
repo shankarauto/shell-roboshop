@@ -28,7 +28,7 @@ do
             --query 'Reservations[0].Instances[0].PrivateIpAddress' \
             --output text
             )
-            RECORD_NAME="$Instance.$DOMAIN_NAME" #mongodb.vtk88s.online
+            RECORD_NAME=$Instance.$DOMAIN_NAME #mongodb.vtk88s.online
     fi
 
     echo "IP Address:" $IP
