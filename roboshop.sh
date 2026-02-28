@@ -21,7 +21,9 @@ do
         IP=$(aws ec2 describe-instances \
             --instance-ids $INSTANCE_ID \
             --query 'Reservations[0].Instances[0].PublicIpAddress' \
-            --output text)
+            --output text
+            )
+            RECORD_NAME=$DOMAIN_NAME #vtk88s.online
     else
         IP=$(aws ec2 describe-instances \
             --instance-ids $INSTANCE_ID \
@@ -54,9 +56,7 @@ do
         }
     ]
     }
-
     '
     echo "record updated for $instance"
-
     
 done
