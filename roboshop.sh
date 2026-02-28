@@ -3,8 +3,8 @@
 SG_ID="sg-048193ac291fc884d"
 AMI_ID="ami-0220d79f3f480ecf5"
 INSTANCE_TYPE="t3.micro"
-ZONE_ID="Z04982743RXIP8DHBWDLO"
-DOMAIN_NAME="vtkcld.site"
+ZONE_ID="Z0203342ANSR45M2EYDS"
+DOMAIN_NAME="vtk88s.online "
 
 
 for instance in $@
